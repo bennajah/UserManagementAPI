@@ -1,20 +1,24 @@
 @UserManagementAPI_HostAddress = http://localhost:5150
+@AuthorizationToken = Bearer valid-token
 
 ### Get all users
 GET {{UserManagementAPI_HostAddress}}/api/users
 Content-Type: application/json
+Authorization: {{AuthorizationToken}}
 
 ###
 
 ### Get a specific user by ID
 GET {{UserManagementAPI_HostAddress}}/api/users/1
 Content-Type: application/json
+Authorization: {{AuthorizationToken}}
 
 ###
 
 ### Add a new user
 POST {{UserManagementAPI_HostAddress}}/api/users
 Content-Type: application/json
+Authorization: {{AuthorizationToken}}
 
 {
   "firstName": "John",
@@ -27,6 +31,7 @@ Content-Type: application/json
 ### Update an existing user
 PUT {{UserManagementAPI_HostAddress}}/api/users/1
 Content-Type: application/json
+Authorization: {{AuthorizationToken}}
 
 {
   "firstName": "John",
@@ -39,3 +44,4 @@ Content-Type: application/json
 ### Delete a user by ID
 DELETE {{UserManagementAPI_HostAddress}}/api/users/1
 Content-Type: application/json
+Authorization: {{AuthorizationToken}}

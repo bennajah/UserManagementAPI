@@ -14,23 +14,22 @@ This project is a User Management API developed for TechHive Solutions. The API 
 
 1. Clone the repository:
 
-   ```sh
-   git clone https://github.com/bennajah/UserManagementAPI.git
-   cd UserManagementAPI
-
-   ```
+```sh
+git clone https://github.com/bennajah/UserManagementAPI.git
+cd UserManagementAPI
+```
 
 2. Build the project:
 
-   ```sh
-   dotnet build
-   ```
+```sh
+dotnet build
+```
 
 3. Run the project:
 
-   ```sh
-   dotnet run
-   ```
+```sh
+dotnet run
+```
 
 ## API Endpoints
 
