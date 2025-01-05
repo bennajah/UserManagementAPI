@@ -38,6 +38,12 @@ dotnet run
 - **URL:** `/api/users`
 - **Method:** `POST`
 - **Description:** Create a new user record.
+- **Headers:**
+  ```json
+  {
+    "AuthorizationToken": "your_token_here"
+  }
+  ```
 - **Request Body:**
   ```json
   {
@@ -52,18 +58,36 @@ dotnet run
 - **URL:** `/api/users`
 - **Method:** `GET`
 - **Description:** Retrieve all user records.
+- **Headers:**
+  ```json
+  {
+    "AuthorizationToken": "your_token_here"
+  }
+  ```
 
 ### Get User by ID
 
 - **URL:** `/api/users/{id}`
 - **Method:** `GET`
 - **Description:** Retrieve a user record by ID.
+- **Headers:**
+  ```json
+  {
+    "AuthorizationToken": "your_token_here"
+  }
+  ```
 
 ### Update User
 
 - **URL:** `/api/users/{id}`
 - **Method:** `PUT`
 - **Description:** Update an existing user record.
+- **Headers:**
+  ```json
+  {
+    "AuthorizationToken": "your_token_here"
+  }
+  ```
 - **Request Body:**
   ```json
   {
@@ -78,6 +102,12 @@ dotnet run
 - **URL:** `/api/users/{id}`
 - **Method:** `DELETE`
 - **Description:** Delete a user record by ID.
+- **Headers:**
+  ```json
+  {
+    "AuthorizationToken": "your_token_here"
+  }
+  ```
 
 ## Contributing
 
